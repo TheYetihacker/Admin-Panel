@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Admin Dashboard </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raja Gaming Hub - Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Raja Gaming Hub - Admin Dashboard</h1>
+    </header>
+    
+    <div class="dashboard-container">
+        <div class="dashboard-section" data-section="user-management">
+            <h2>User Management</h2>
+        </div>
+        
+        <div class="dashboard-section" data-section="analytics-reports">
+            <h2>Analytics / Reports</h2>
+        </div>
+        
+        <div class="dashboard-section" data-section="deposit-accounts">
+            <h2>Deposit ACs</h2>
+        </div>
+        
+        <div class="dashboard-section" data-section="support-help">
+            <h2>Support / Help</h2>
+        </div>
+        
+        <div class="dashboard-section" data-section="alert-reminders">
+            <h2>Alert Reminders</h2>
+        </div>
+        
+        <div class="dashboard-section" data-section="enable-games">
+            <h2>Enable Games</h2>
+        </div>
+        
+        <div class="dashboard-section" data-section="settings">
+            <h2>Settings</h2>
+        </div>
+        
+        <div class="dashboard-section" data-section="website-data">
+            <h2>Website Data</h2>
+        </div>
+    </div>
+
+    <!-- Example Data Sections -->
+    <div class="content" id="content">
+        <!-- User Management Data -->
+        <div class="data-section" id="user-management">
+            <h2>User Management</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Doe</td>
+                        <td>johnbadi@gmail.com</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Jane Smith</td>
+                        <td>jane@gopgle.com</td>
+                        <td>Inactive</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Mohan das </td>
+                        <td>mohandas0032@gmail.com</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Rani meena</td>
+                        <td>ranidevi@gmail.com</td>
+                        <td>Inactive</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>James Green</td>
+                        <td>james@gmail.com</td>
+                        <td>Active</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Analytics / Reports Data -->
+        <div class="data-section" id="analytics-reports">
+            <h2>Analytics / Reports</h2>
+            <h3>Monthly Active Users</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Users</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January</td>
+                        <td>error</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>March</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>April</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>May</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Revenue</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Revenue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January</td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>March</td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>April</td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>May</td>
+                        <td>$0.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+      <!-- Deposit Accounts Data -->
+<div class="data-section" id="deposit-accounts">
+    <h2>Deposit ACs</h2>
+    <div class="sub-heading" style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+        Deposit Information of Admin
+    </div>
+    <div class="editable-box" style="background-color: rgba(255, 255, 0, 0.8);">
+        <form id="deposit-info-form">
+            <label for="admin-name">Admin Name:</label>
+            <input type="text" id="admin-name" name="admin-name" value="MOOSA" />
+
+            <label for="bank-name">Bank Name:</label>
+            <input type="text" id="bank-name" name="bank-name" value="STATE BANK OF INDIA" />
+
+            <label for="account-no">A/C No:</label>
+            <input type="text" id="account-no" name="account-no" value="41519156557" />
+
+            <label for="ifsc-code">IFSC CODE:</label>
+            <input type="text" id="ifsc-code" name="ifsc-code" value="SBIN0010155" />
+        </form>
+    </div>
+</div>
+
+   <!-- Support / Help Data -->
+<div class="data-section" id="support-help">
+    <h2>Support / Help</h2>
+    <div class="reminder-box" style="background-color: rgba(0, 255, 0, 0.5); color: black;">
+        <p>Reminder: Please check the system regularly to ensure all support requests are being handled promptly.</p>
+    </div>
+    <div class="editable-box" style="background-color: rgba(0, 255, 0, 0.8); border: 2px solid #388E3C;">
+        <form id="support-info-form">
+            <label for="contact-no">Contact No:</label>
+            <input type="text" id="contact-no" name="contact-no" value="+91 96902 06590" />
+
+            <label for="support-mail">Support mail:</label>
+            <input type="email" id="support-mail" name="support-mail" value="Moosa9756557965@gmail.com" />
+        </form>
+    </div>
+</div>
+
+    <!-- Alert Reminders Data -->
+<div class="data-section" id="alert-reminders">
+    <h2>Alert Reminders</h2>
+    
+    <div class="sub-heading" style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+        FAQ
+    </div>
+    <div class="faq-box" style="border: 2px solid #7B1FA2; border-radius: 8px; padding: 15px;">
+        <div class="faq-item">
+            <h3>1. What is the purpose of this platform?</h3>
+            <p>Our platform provides a variety of online games and interactive features to engage users and offer entertainment.</p>
+        </div>
+        <div class="faq-item">
+            <h3>2. How do I create an account?</h3>
+            <p>You can create an account by clicking the 'Sign Up' button on the homepage and filling in the required details.</p>
+        </div>
+        <div class="faq-item">
+            <h3>3. How can I reset my password?</h3>
+            <p>If you forget your password, use the 'Forgot Password' link on the login page to reset it.</p>
+        </div>
+        <div class="faq-item">
+            <h3>4. What payment methods are accepted?</h3>
+            <p>We accept various payment methods including credit cards, debit cards, and online payment gateways.</p>
+        </div>
+        <div class="faq-item">
+            <h3>5. Can I change my subscription plan?</h3>
+            <p>Yes, you can change your subscription plan through your account settings.</p>
+        </div>
+        <div class="faq-item">
+            <h3>6. Who do I contact for support?</h3>
+            <p>You can contact our support team via the 'Support' section on the dashboard or email us directly.</p>
+        </div>
+        <button id="add-question-btn">Add More Questions</button>
+    </div>
+</div>
+      
+      <!-- Enable Games Data -->
+<div class="data-section" id="enable-games">
+    <h2>Enable Games</h2>
+    <div class="game-list">
+        <ul id="game-list">
+            <li>Jungle Rummy <button class="remove-game">Remove</button></li>
+            <li>Ludo King <button class="remove-game">Remove</button></li>
+            <li>Striker <button class="remove-game">Remove</button></li>
+            <li>Teen Patti <button class="remove-game">Remove</button></li>
+            <li>Colour Prediction <button class="remove-game">Remove</button></li>
+        </ul>
+        <button id="add-game-btn">Add Game</button>
+    </div>
+    <div id="alert-box" style="display: none; background-color: rgba(255, 0, 0, 0.5); color: white; padding: 15px; border-radius: 8px;">
+        This game can't be added on your website because of less cloud storage.
+    </div>
+</div>
+
+      <!-- Website Data -->
+<div class="data-section" id="website-data">
+    <h2>Website Data</h2>
+
+    <!-- Dark Mode / Light Mode -->
+    <div class="editable-box" style="background-color: rgba(0, 0, 0, 0.1);">
+        <label for="theme-toggle">Dark Mode / Light Mode:</label>
+        <input type="checkbox" id="theme-toggle" />
+    </div>
+
+    <!-- SEO Words -->
+    <div class="editable-box" style="background-color: rgba(255, 255, 255, 0.8);">
+        <label for="seo-words">SEO Words:</label>
+        <textarea id="seo-words" rows="4" placeholder="Enter keywords, separated by commas...">
+            Keyword1, Keyword2, Keyword3, Keyword4, Keyword5, Keyword6, Keyword7, Keyword8, Keyword9, Keyword10, Keyword11, Keyword12, Keyword13, Keyword14, Keyword15, Keyword16, Keyword17, Keyword18, Keyword19, Keyword20
+        </textarea>
+    </div>
+
+    <!-- Website Domain -->
+    <div class="editable-box" style="background-color: rgba(255, 255, 255, 0.8);">
+        <label for="website-domain">Website Domain:</label>
+        <input type="text" id="website-domain" value="https://ezulix.co.in/color_game/login" />
+    </div>
+
+    <!-- Website Description -->
+    <div class="editable-box" style="background-color: rgba(255, 255, 255, 0.8);">
+        <label for="website-description">Website Description:</label>
+        <textarea id="website-description" rows="4" placeholder="Enter website description here...">
+            Welcome to our gaming website! Explore a wide range of exciting games and challenges.
+        </textarea>
+    </div>
+
+    <!-- Google Keywords -->
+    <div class="editable-box" style="background-color: rgba(255, 255, 255, 0.8);">
+        <label for="google-keywords">Google Keywords:</label>
+        <textarea id="google-keywords" rows="4" placeholder="Enter Google keywords, separated by commas...">
+            KeywordA, KeywordB, KeywordC, KeywordD, KeywordE
+        </textarea>
+    </div>
+</div>
+
+      <!-- Settings Data -->
+<div class="data-section" id="settings">
+    <h2>Settings</h2>
+    <div class="editable-box" style="background-color: rgba(255, 255, 255, 0.8);">
+        <label for="admin-name">Admin Name:</label>
+        <input type="text" id="admin-name" value="Moosa" />
+        
+        <label for="admin-email">Email:</label>
+        <input type="email" id="admin-email" value="Moosa9756557965@gmail.com" />
+        
+        <label for="admin-phone">Phone Number:</label>
+        <input type="text" id="admin-phone" value="+91 96902 06590" />
+        
+        <label for="admin-password">Password:</label>
+        <input type="password" id="admin-password" value="666666" />
+        
+        <button id="save-settings-btn">Save Settings</button>
+    </div>
+</div>
+
+<!-- Save Confirmation Popup -->
+<div id="save-popup" style="display: none; background-color: rgba(0, 255, 0, 0.5); color: black; padding: 15px; border-radius: 8px; position: fixed; top: 20px; right: 20px;">
+    Saved
+</div>
+
+
+    <!-- Repeat similar structure for other sections... -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

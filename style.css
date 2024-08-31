@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: #4A148C;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: rgba(106, 27, 154, 0.1);
+    border: 2px solid #7B1FA2;
+    border-radius: 8px;
+}
+
+.dashboard-section {
+    background-color: rgba(106, 27, 154, 0.8);
+    border: 2px solid #7B1FA2;
+    border-radius: 8px;
+    flex: 1 0 160px;
+    max-width: 180px;
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.dashboard-section h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.dashboard-section:hover {
+    transform: translateY(-5px);
+    background-color: rgba(106, 27, 154, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    display: none;
+    margin: 20px;
+}
+
+.data-section {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4A148C;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    height: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7B1FA2;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+/* Common Styles for Editable Boxes */
+.editable-box {
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="email"] {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Specific Styles for Sub Heading and Boxes */
+.sub-heading {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.reminder-box {
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* FAQ and Editable Styles */
+.faq-box {
+    border: 2px solid #7B1FA2;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #4A148C;
+}
+
+.faq-item p {
+    margin: 5px 0;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4A148C;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6A1B9A;
+}
+
+.game-list {
+    margin-top: 20px;
+}
+
+.game-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.game-list li {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #7B1FA2;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-game {
+    background-color: #E53935;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-game:hover {
+    background-color: #C62828;
+}
+
+
+/* Website Data Styles */
+#website-data .editable-box {
+    margin-top: 20px;
+}
+
+#website-data textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#website-data input[type="text"], 
+#website-data input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Settings Styles */
+#settings {
+    margin-top: 20px;
+}
+
+#settings .editable-box {
+    padding: 15px;
+}
+
+#save-settings-btn {
+    background-color: #4A148C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#save-settings-btn:hover {
+    background-color: #6A1B9A;
+}
+
+/* Save Popup Styles */
+#save-popup {
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+}
