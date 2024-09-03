@@ -73,20 +73,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 3000); // Popup visible for 3 seconds
     });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    const paymentAlert = document.getElementById('payment-alert');
-    
-    // Display the payment alert box when the page loads
-    paymentAlert.style.display = 'block';
-
-    // Optionally, block access to the dashboard by hiding other elements
-    document.querySelectorAll('.data-section').forEach(section => {
-        section.style.display = 'none';
-    });
-});
-
-// Function to handle the Contact Support button (if needed)
-function contactSupport() {
-    window.location.href = "mailto:themanabhiii@gmail.com"; // Replace with actual support email or page
-}
